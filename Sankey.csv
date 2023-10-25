@@ -1,56 +1,56 @@
-Manual categories,Location,Animals,Ave_interest
-Hunting (includes conservation and safari),Africa,Deer and Tiger,High
-Captive engagement ,,,High
-Wild Engagment,,Elephants,High
-,Europe,Bear,High
-,,,High
-Educational,,Birds,High
-,,Big Cats ,High
-Hunting,US South,Turkey,High
-Hunting,North America,Deer,High
-,Africa,Lions,High
-,US West,Elk,High
-Wild Engagment,North America,Grizzly,Medium
-Wild Engagment/Conservation,North America,,Medium
-,,,Medium
-Captive engagement ,North America,African Unglets,Medium
-Educational,,Reindeer,Medium
-Educational,Africa,Cheetah,Medium
-Educational,Asia,Snow Leopards,Medium
-Educational,,,Medium
-,,Bear,Medium
-Captive engagement ,Global,Primate,Medium
-Conflict,,Squirrel/Domestic animals,Medium
-,Africa,Lion,Medium
-Wild Engagment,Africa,Primate,Medium
-Wild Engagment,Africa,,Medium
-,,Deer,Medium
-Hunting,US Midwest,Hog and Bear,Low
-,,Deer,Low
-,,Wild Dog,Low
-Wild Engagement,Europe,,Low
-,,,Low
-Wild Engagement,Africa,,Low
-,,Photography,Low
-,,"Rabbit, Bobcat",Low
-,,Fox,Low
-,,Moose,Low
-Captive engagement ,,Elephant,Low
-,,Bird of prey,Low
-Wild Engagement,Oceana,Bees and Wombat,Low
-Captive engagement ,US South,,Low
-Wild Engagement,,Owl,Low
-Wild Engagement,US West,,Low
-,Hawaii,Ungulets,Low
-Hunting,US South,Deer,Low
-Wild Engagement,,Tiger,Low
-Hunting,Canada,Moose,Low
-Wild Engagement,Tropical South,Flora,Low
-,,Wolves,Low
-Wild Engagement,Africa ,Rhino and Lions,Low
-,,Coyote,Low
-,Africa,,Low
-,,,Low
-,,,Low
-Wild Engagement,South Asia,Tiger,Low
-,Oceana,Deer,Low
+Manual categories,Location,Animals,Count
+Hunting (includes conservation and safari),Africa,Deer and Tiger,977
+Captive engagement ,,,91
+Wild Engagment,,Elephants,82
+,Europe,Bear,82
+,,,78
+Educational,,Birds,65
+,,Big Cats ,57
+Hunting,US South,Turkey,45
+Hunting,North America,Deer,43
+,Africa,Lions,43
+,US West,Elk,42
+Wild Engagment,North America,Grizzly,37
+Wild Engagment/Conservation,North America,,37
+,,,37
+Captive engagement ,North America,African Unglets,32
+Educational,,Reindeer,32
+Educational,Africa,Cheetah,30
+Educational,Asia,Snow Leopards,30
+Educational,,,29
+,,Bear,29
+Captive engagement ,Global,Primate,28
+Conflict,,Squirrel/Domestic animals,28
+,Africa,Lion,27
+Wild Engagment,Africa,Primate,25
+Wild Engagment,Africa,,25
+,,Deer,24
+Hunting,US Midwest,Hog and Bear,24
+,,Deer,23
+,,Wild Dog,23
+Wild Engagement,Europe,,22
+,,,22
+Wild Engagement,Africa,,21
+,,Photography,21
+,,"Rabbit, Bobcat",21
+,,Fox,20
+,,Moose,20
+Captive engagement ,,Elephant,20
+,,Bird of prey,19
+Wild Engagement,Oceana,Bees and Wombat,18
+Captive engagement ,US South,,17
+Wild Engagement,,Owl,17
+Wild Engagement,US West,,16
+,Hawaii,Ungulets,16
+Hunting,US South,Deer,16
+Wild Engagement,,Tiger,16
+Hunting,Canada,Moose,14
+Wild Engagement,Tropical South,Flora,14
+,,Wolves,14
+Wild Engagement,Africa ,Rhino and Lions,14
+,,Coyote,14
+,Africa,,13
+,,,13
+,,,12
+Wild Engagement,South Asia,Tiger,12
+,Oceana,Deer,10
