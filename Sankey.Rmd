@@ -20,6 +20,19 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r}
 df <- read.csv("Sankey.csv")
+
+df[rep(seq_len(dim(df)[1]), df$Count), 2]
+
+Manual_Cat <- rep(df$Manual.categories, df$Count)
+Location <- rep(df$Location, df$Count)
+Animals <- rep(df$Animals, df$Count)
+
+df_sanky <- as.data.frame(cbind(Manual_Cat, Location, Animals))
+
+df_sanky <- df_sanky%>%
+  make_long(Manual_Cat, Location, Animals)
+
+
 ```
 
 ## Including Plots
@@ -27,16 +40,49 @@ df <- read.csv("Sankey.csv")
 You can also embed plots, for example:
 
 ```{r}
-pl <- ggplot(df, aes(x = Manual.categories,                        
-                     next_x =  Location,                                     
-                     node = Animals,
-                     next_node = , 
-                     fill = factor(Animals)))
+pl <- ggplot(df_sanky, aes(x = x,                        
+                     next_x = next_x,                                     
+                     node = node,
+                     next_node = next_node,        
+                     fill = factor(node)))
+                     
+pl <- pl +geom_sankey(flow.alpha = 0.5,          #This Creates the transparency of your node 
+                      node.color = "black",     # This is your node color        
+                      show.legend = FALSE)        # This determines if you want your legend to show
+
+pl
+
+
+```
+```{r}
+pl <- ggplot(df_sanky, aes(x = x,                        
+                     next_x = next_x,                                     
+                     node = node,
+                     next_node = next_node,        
+                     fill = factor(node),
+                     label = node))             # This Creates a label for each node
                      
 pl <- pl +geom_sankey(flow.alpha = 0.5,          #This Creates the transparency of your node 
                       node.color = "black",     # This is your node color        
                       show.legend = TRUE)        # This determines if you want your legend to show
 
+pl <- pl + geom_sankey_label(Size = 3, 
+                             color = "black", 
+                             fill = "white") # This specifies the Label format for each node 
+
+
+pl <- pl + theme_bw()
+pl <- pl + theme(legend.position = 'none')
+pl <- pl + theme(axis.title = element_blank(),
+                 axis.text.y = element_blank(),
+                 axis.ticks = element_blank(),
+                 panel.grid = element_blank())
+
+pl <- pl + scale_fill_viridis_d(option = "inferno")
+pl <- pl + labs(title = "Creating a Sankey Diagram")
+pl <- pl + labs(subtitle = "Using a simplified ficticious data")
+pl <- pl + labs(caption ="Opeyemi Omiwale" )
+pl <- pl + labs(fill = 'Nodes')
 pl
 ```
 
